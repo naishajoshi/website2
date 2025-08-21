@@ -52,6 +52,7 @@ img { max-width: 100%; display: block; }
 .nav-links { display: none; gap: 28px; align-items: center; }
 .nav-links a { font-weight: 600; color: #111827; }
 .nav-links a:hover { color: var(--ducati-red); }
+.nav-links a.active { color: var(--ducati-red); }
 .desktop-only { display: none; }
 
 .nav-toggle { background: transparent; border: 0; width: 40px; height: 40px; display: grid; place-items: center; }
@@ -120,6 +121,7 @@ img { max-width: 100%; display: block; }
 
 /* Sections */
 .section { padding: 72px 0; background: var(--surface); }
+.section[id] { scroll-margin-top: 84px; }
 .section-alt { background: var(--surface-2); }
 .section-accent { background: var(--ducati-red); }
 .text-on-accent { color: #fff; text-align: center; }
