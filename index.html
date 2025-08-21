@@ -19,6 +19,7 @@
           <a href="#motogp">Racing</a>
           <a href="#equipment">Equipment</a>
           <a href="#dealers">Dealers</a>
+          <a href="#models">Configurator</a>
           <a href="#test-ride">Experience</a>
         </nav>
         <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu">
@@ -32,6 +33,7 @@
         <a href="#motogp">Racing</a>
         <a href="#equipment">Equipment</a>
         <a href="#dealers">Dealers</a>
+        <a href="#models">Configurator</a>
         <a href="#test-ride">Experience</a>
         <a href="#" class="btn btn-primary">MyDucati</a>
       </div>
@@ -45,11 +47,83 @@
           <p>Experience the passion, performance, and style that defines Ducati. From the racetrack to the street, unleash your inner racer.</p>
           <div class="hero-actions">
             <a href="#models" class="btn btn-primary">Explore Models</a>
-            <a href="#test-ride" class="btn btn-outline">Book Test Ride</a>
+            <a href="#test-ride" class="btn btn-light">Book Test Ride</a>
           </div>
         </div>
         <div class="scroll-indicator" aria-hidden="true">
           <div class="mouse"><div class="wheel"></div></div>
+        </div>
+      </section>
+      <section class="quick-actions" aria-label="Quick actions">
+        <div class="container">
+          <div class="qa-grid">
+            <a class="qa-card" href="#test-ride">
+              <div class="qa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M7 2h10a2 2 0 0 1 2 2v2h-2V4H7v16h10v-2h2v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm5 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <div class="qa-body">
+                <h3>Book a Test Ride</h3>
+                <p>Experience Ducati performance near you</p>
+              </div>
+            </a>
+
+            <a class="qa-card" href="#dealers">
+              <div class="qa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+              </div>
+              <div class="qa-body">
+                <h3>Find Dealer</h3>
+                <p>Locate your nearest Ducati showroom</p>
+              </div>
+            </a>
+
+            <a class="qa-card" href="#models">
+              <div class="qa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M5 4h14a1 1 0 0 1 1 1v11l-5-3-3 2-3-2-5 3V5a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <div class="qa-body">
+                <h3>Bike Configurator</h3>
+                <p>Build your Ducati your way</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="featured" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>FEATURED <span class="accent">BIKE</span></h2>
+            <p>Explore a closer look at one of our icons with key specs and highlights.</p>
+          </header>
+
+          <div class="featured-grid">
+            <div class="featured-media">
+              <img src="./images/panigale.png" alt="Ducati Panigale V4" loading="lazy" />
+            </div>
+            <div class="featured-body">
+              <h3 class="featured-title">Panigale V4</h3>
+              <p class="featured-tagline">The essence of Ducati Corse on the road. Performance born to race.</p>
+
+              <dl class="featured-specs">
+                <div><dt>Engine</dt><dd>1103 cc Desmosedici Stradale</dd></div>
+                <div><dt>Power</dt><dd>214 hp (157.5 kW)</dd></div>
+                <div><dt>Torque</dt><dd>124 Nm @ 10,000 rpm</dd></div>
+                <div><dt>Dry Weight</dt><dd>175 kg</dd></div>
+                <div><dt>Price</dt><dd>From $24,995</dd></div>
+              </dl>
+
+              <ul class="featured-highlights">
+                <li>Advanced electronics with IMU-based rider aids</li>
+                <li>Aerodynamic winglets for high-speed stability</li>
+                <li>Brembo Stylema brakes with radial master cylinder</li>
+              </ul>
+
+              <div class="featured-actions">
+                <a href="#test-ride" class="btn btn-primary">Book Test Ride</a>
+                <a href="#models" class="btn btn-outline">View All Models</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="models" class="section section-alt">
@@ -72,7 +146,7 @@
                   <div><dt>Power</dt><dd>214 hp</dd></div>
                   <div><dt>Weight</dt><dd>195 kg</dd></div>
                 </dl>
-                <a class="btn btn-primary block">View Details</a>
+                <a href="model.html?id=panigale" class="btn btn-primary block">View Details</a>
               </div>
             </article>
             <article class="card">
@@ -88,7 +162,7 @@
                   <div><dt>Power</dt><dd>159 hp</dd></div>
                   <div><dt>Weight</dt><dd>223 kg</dd></div>
                 </dl>
-                <a class="btn btn-primary block">View Details</a>
+                <a href="model.html?id=diavel" class="btn btn-primary block">View Details</a>
               </div>
             </article>
             <article class="card">
@@ -104,7 +178,7 @@
                   <div><dt>Power</dt><dd>170 hp</dd></div>
                   <div><dt>Weight</dt><dd>243 kg</dd></div>
                 </dl>
-                <a class="btn btn-primary block">View Details</a>
+                <a href="model.html?id=multistrada" class="btn btn-primary block">View Details</a>
               </div>
             </article>
             <article class="card">
@@ -120,7 +194,7 @@
                   <div><dt>Power</dt><dd>110 hp</dd></div>
                   <div><dt>Weight</dt><dd>202 kg</dd></div>
                 </dl>
-                <a class="btn btn-primary block">View Details</a>
+                <a href="model.html?id=desertx" class="btn btn-primary block">View Details</a>
               </div>
             </article>
           </div>
@@ -144,18 +218,19 @@
               <div class="card-body">
                 <h3>Ducati Performance Helmet</h3>
                 <p class="price">$399</p>
-                <a class="btn btn-dark block">Add to Cart</a>
+                <a class="btn btn-primary block">Add to Cart</a>
               </div>
             </article>
             <article class="card featured">
               <div class="card-media ratio-1-1">
                 <img src="./images/panigale.png" alt="Racing Jacket" loading="lazy" />
                 <span class="chip">Riding Apparel</span>
+                <span class="ribbon">Featured</span>
               </div>
               <div class="card-body">
                 <h3>Ducati Racing Jacket</h3>
                 <p class="price">$695</p>
-                <a class="btn btn-dark block">Add to Cart</a>
+                <a class="btn btn-primary block">Add to Cart</a>
               </div>
             </article>
             <article class="card">
@@ -166,7 +241,7 @@
               <div class="card-body">
                 <h3>Performance Exhaust System</h3>
                 <p class="price">$1,299</p>
-                <a class="btn btn-dark block">Add to Cart</a>
+                <a class="btn btn-primary block">Add to Cart</a>
               </div>
             </article>
           </div>
