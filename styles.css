@@ -148,6 +148,21 @@ img { max-width: 100%; display: block; }
 .specs div { display: flex; justify-content: space-between; font-size: 14px; }
 .specs dt { color: var(--muted); }
 
+/* Featured Bike */
+.featured-grid { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 1024px) { .featured-grid { grid-template-columns: 1.2fr 1fr; } }
+.featured-media { border: 0; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.featured-media img { width: 100%; height: auto; display: block; }
+.featured-body { padding: 8px; }
+.featured-title { margin: 0 0 6px; font-size: clamp(22px, 4vw, 32px); }
+.featured-tagline { color: var(--muted); margin: 0 0 14px; }
+.featured-specs { display: grid; gap: 8px; margin: 0 0 16px; }
+.featured-specs div { display: flex; justify-content: space-between; gap: 16px; }
+.featured-specs dt { color: var(--muted); }
+.featured-highlights { margin: 0 0 16px; padding-left: 18px; color: #374151; }
+.featured-highlights li { margin: 6px 0; }
+.featured-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
 /* Test ride */
 .features .feature-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 16px; text-align: center; backdrop-filter: blur(6px); }
 .features .icon { color: #ffeb3b; margin-bottom: 8px; display: grid; place-items: center; }
