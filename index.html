@@ -1,15 +1,388 @@
-
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Ducati Landing Page</title>
-    </head>
-
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ducati-inspired landing page" />
+    <title>Ducati Landing Page</title>
+    <link rel="preload" href="/images/DesertXpostre.jpeg" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#" class="brand" aria-label="Ducati home">
+          <img src="./images/ducati_id.png" alt="Ducati" class="brand-logo" />
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#models">Motorcycles</a>
+          <a href="#motogp">Racing</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#dealers">Dealers</a>
+          <a href="#test-ride">Experience</a>
+        </nav>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="sr-only">Toggle menu</span>
+          <div class="hamburger"></div>
+        </button>
+        <a href="#" class="btn btn-primary desktop-only">MyDucati</a>
+      </div>
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <a href="#models">Motorcycles</a>
+        <a href="#motogp">Racing</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#dealers">Dealers</a>
+        <a href="#test-ride">Experience</a>
+        <a href="#" class="btn btn-primary">MyDucati</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-media" style="--hero-img: url('./images/DesertXpostre.jpeg')"></div>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <h1>BORN TO <span class="accent">RACE</span></h1>
+          <p>Experience the passion, performance, and style that defines Ducati. From the racetrack to the street, unleash your inner racer.</p>
+          <div class="hero-actions">
+            <a href="#models" class="btn btn-primary">Explore Models</a>
+            <a href="#test-ride" class="btn btn-outline">Book Test Ride</a>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="mouse"><div class="wheel"></div></div>
+        </div>
+      </section>
+      <section id="models" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>OUR <span class="accent">MOTORCYCLES</span></h2>
+            <p>From track-focused superbikes to versatile adventure machines, discover the Ducati that matches your passion.</p>
+          </header>
+          <div class="grid grid-4">
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/panigale.png" alt="Panigale V4" loading="lazy" />
+                <span class="chip">Superbike</span>
+              </div>
+              <div class="card-body">
+                <h3>Panigale V4</h3>
+                <p class="price">From $24,995</p>
+                <dl class="specs">
+                  <div><dt>Engine</dt><dd>1103cc</dd></div>
+                  <div><dt>Power</dt><dd>214 hp</dd></div>
+                  <div><dt>Weight</dt><dd>195 kg</dd></div>
+                </dl>
+                <a class="btn btn-primary block">View Details</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/Diavel.png" alt="Diavel" loading="lazy" />
+                <span class="chip">Muscle</span>
+              </div>
+              <div class="card-body">
+                <h3>Diavel</h3>
+                <p class="price">From $16,995</p>
+                <dl class="specs">
+                  <div><dt>Engine</dt><dd>1262cc</dd></div>
+                  <div><dt>Power</dt><dd>159 hp</dd></div>
+                  <div><dt>Weight</dt><dd>223 kg</dd></div>
+                </dl>
+                <a class="btn btn-primary block">View Details</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/Multistrada.png" alt="Multistrada V4" loading="lazy" />
+                <span class="chip">Adventure</span>
+              </div>
+              <div class="card-body">
+                <h3>Multistrada V4</h3>
+                <p class="price">From $22,995</p>
+                <dl class="specs">
+                  <div><dt>Engine</dt><dd>1158cc</dd></div>
+                  <div><dt>Power</dt><dd>170 hp</dd></div>
+                  <div><dt>Weight</dt><dd>243 kg</dd></div>
+                </dl>
+                <a class="btn btn-primary block">View Details</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/DesertX.png" alt="DesertX" loading="lazy" />
+                <span class="chip">Rally</span>
+              </div>
+              <div class="card-body">
+                <h3>DesertX</h3>
+                <p class="price">From $17,995</p>
+                <dl class="specs">
+                  <div><dt>Engine</dt><dd>937cc</dd></div>
+                  <div><dt>Power</dt><dd>110 hp</dd></div>
+                  <div><dt>Weight</dt><dd>202 kg</dd></div>
+                </dl>
+                <a class="btn btn-primary block">View Details</a>
+              </div>
+            </article>
+          </div>
+          <div class="center mt-lg">
+            <a class="btn btn-outline">View All Models</a>
+          </div>
+        </div>
+      </section>
+      <section id="equipment" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>DUCATI <span class="accent">EQUIPMENT</span></h2>
+            <p>Enhance your riding experience with authentic Ducati gear, accessories, and performance parts designed for excellence.</p>
+          </header>
+          <div class="grid grid-3">
+            <article class="card">
+              <div class="card-media ratio-1-1">
+                <img src="./images/1supersport-950-.png" alt="Performance Helmet" loading="lazy" />
+                <span class="chip">Safety Gear</span>
+              </div>
+              <div class="card-body">
+                <h3>Ducati Performance Helmet</h3>
+                <p class="price">$399</p>
+                <a class="btn btn-dark block">Add to Cart</a>
+              </div>
+            </article>
+            <article class="card featured">
+              <div class="card-media ratio-1-1">
+                <img src="./images/panigale.png" alt="Racing Jacket" loading="lazy" />
+                <span class="chip">Riding Apparel</span>
+              </div>
+              <div class="card-body">
+                <h3>Ducati Racing Jacket</h3>
+                <p class="price">$695</p>
+                <a class="btn btn-dark block">Add to Cart</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-1-1">
+                <img src="./images/Multistrada.png" alt="Performance Exhaust" loading="lazy" />
+                <span class="chip">Accessories</span>
+              </div>
+              <div class="card-body">
+                <h3>Performance Exhaust System</h3>
+                <p class="price">$1,299</p>
+                <a class="btn btn-dark block">Add to Cart</a>
+              </div>
+            </article>
+          </div>
+          <div class="center mt-lg">
+            <a class="btn btn-outline">Shop All Equipment</a>
+          </div>
+        </div>
+      </section>
+      <section id="test-ride" class="section section-accent">
+        <div class="container center text-on-accent">
+          <h2>EXPERIENCE THE <span class="highlight">THRILL</span></h2>
+          <p>Feel the power, precision, and passion of Ducati. Book a test ride and discover why Ducati riders are part of a special brotherhood.</p>
+          <div class="features grid grid-3">
+            <div class="feature-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"><path fill="currentColor" d="M7 2h10a2 2 0 0 1 2 2v2h-2V4H7v16h10v-2h2v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm5 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <h3>Easy Booking</h3>
+              <p>Schedule your test ride online in just a few clicks</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+              </div>
+              <h3>Multiple Locations</h3>
+              <p>Find a Ducati dealer near you for the ultimate experience</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"><path fill="currentColor" d="M12 8a4 4 0 1 1-3.999 4.001A4 4 0 0 1 12 8Zm0-6a1 1 0 0 1 1 1v2.062a9 9 0 1 1-2 0V3a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <h3>Flexible Hours</h3>
+              <p>Test rides available throughout the week and weekends</p>
+            </div>
+          </div>
+          <div class="hero-actions mt-md">
+            <a class="btn btn-light">Book Test Ride</a>
+            <a href="#dealers" class="btn btn-outline-light">Find Dealer</a>
+          </div>
+        </div>
+      </section>
+      <section id="dealers" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>FIND A <span class="accent">DEALER</span></h2>
+            <p>Locate your nearest Ducati dealer for sales, service, and genuine parts.</p>
+            <form class="dealer-form" onsubmit="return false">
+              <input type="text" placeholder="Enter your zip code or city" aria-label="Search by city or zip" />
+              <button class="btn btn-primary" aria-label="Search">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16Zm11 19-5.6-5.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </button>
+            </form>
+          </header>
+          <div class="dealer-grid">
+            <div class="map">
+              <div class="map-placeholder">
+                <svg viewBox="0 0 24 24" width="64" height="64" aria-hidden="true"><path fill="#9ca3af" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+                <p class="muted">Interactive Map — dealer locations will appear here</p>
+                <span class="pin" style="--x:35%;--y:30%"></span>
+                <span class="pin" style="--x:65%;--y:55%"></span>
+                <span class="pin" style="--x:50%;--y:75%"></span>
+              </div>
+            </div>
+            <ul class="dealer-list">
+              <li class="dealer">
+                <div class="dealer-top">
+                  <div>
+                    <h3>Ducati New York</h3>
+                    <p class="muted">2.3 miles away</p>
+                  </div>
+                  <a class="btn btn-primary btn-sm">Visit</a>
+                </div>
+                <div class="dealer-info">
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg> 155 W 126th St, New York, NY 10027</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.2 2.4.57 3.5a1 1 0 0 1-.24 1.01l-2.21 2.28Z"/></svg> (212) 555-0123</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6 2h12a2 2 0 0 1 2 2v16l-8-4-8 4V4a2 2 0 0 1 2-2Z"/></svg> Mon-Sat: 9AM-7PM, Sun: 10AM-5PM</div>
+                  <div class="tags">
+                    <span>Sales</span><span>Service</span><span>Parts</span><span>Test Rides</span>
+                  </div>
+                </div>
+              </li>
+              <li class="dealer">
+                <div class="dealer-top">
+                  <div>
+                    <h3>Manhattan Ducati</h3>
+                    <p class="muted">3.7 miles away</p>
+                  </div>
+                  <a class="btn btn-primary btn-sm">Visit</a>
+                </div>
+                <div class="dealer-info">
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg> 234 E 58th St, New York, NY 10022</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.2 2.4.57 3.5a1 1 0 0 1-.24 1.01l-2.21 2.28Z"/></svg> (212) 555-0456</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6 2h12a2 2 0 0 1 2 2v16l-8-4-8 4V4a2 2 0 0 1 2-2Z"/></svg> Mon-Fri: 9AM-6PM, Sat: 9AM-5PM</div>
+                  <div class="tags">
+                    <span>Sales</span><span>Service</span><span>Test Rides</span>
+                  </div>
+                </div>
+              </li>
+              <li class="dealer">
+                <div class="dealer-top">
+                  <div>
+                    <h3>Brooklyn Ducati Center</h3>
+                    <p class="muted">5.1 miles away</p>
+                  </div>
+                  <a class="btn btn-primary btn-sm">Visit</a>
+                </div>
+                <div class="dealer-info">
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg> 789 Atlantic Ave, Brooklyn, NY 11238</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.2 2.4.57 3.5a1 1 0 0 1-.24 1.01l-2.21 2.28Z"/></svg> (718) 555-0789</div>
+                  <div class="row"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6 2h12a2 2 0 0 1 2 2v16l-8-4-8 4V4a2 2 0 0 1 2-2Z"/></svg> Tue-Sat: 10AM-7PM, Sun: 11AM-4PM</div>
+                  <div class="tags">
+                    <span>Sales</span><span>Parts</span><span>Accessories</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="motogp" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>RACING <span class="accent">NEWS</span></h2>
+            <p>Stay updated with the latest from Ducati Corse and behind-the-scenes stories from the world of motorcycle racing.</p>
+          </header>
+          <div class="grid grid-4">
+            <article class="card span-2">
+              <div class="card-media ratio-16-10">
+                <img src="./images/Multistradapostre.jpeg" alt="Racing news" loading="lazy" />
+                <span class="chip">WorldSBK</span>
+              </div>
+              <div class="card-body">
+                <h3>Ducati Dominates: Double Victory in WorldSBK</h3>
+                <p class="muted">An incredible weekend for Ducati as both riders secured podium positions in challenging conditions.</p>
+                <div class="meta"><span>Marco Rossi</span><span>3 min read</span></div>
+                <a class="btn btn-link">Read More</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/panigale.png" alt="Panigale news" loading="lazy" />
+                <span class="chip">Technology</span>
+              </div>
+              <div class="card-body">
+                <h3>Panigale V4 R Sets Lap Record</h3>
+                <p class="muted">The latest iteration of our flagship superbike proves its worth on the legendary Italian circuit.</p>
+                <div class="meta"><span>Elena Ferrari</span><span>5 min read</span></div>
+                <a class="btn btn-link">Read More</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media ratio-4-3">
+                <img src="./images/DesertX.png" alt="MotoGP prep" loading="lazy" />
+                <span class="chip">MotoGP</span>
+              </div>
+              <div class="card-body">
+                <h3>Behind the Scenes: Team Preparation</h3>
+                <p class="muted">Exclusive access to Ducati Corse as they prepare for the upcoming Grand Prix.</p>
+                <div class="meta"><span>Giovanni Bianchi</span><span>7 min read</span></div>
+                <a class="btn btn-link">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="center mt-lg"><a class="btn btn-outline">View All News</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="brand-col">
+            <img src="./images/ducati_id.png" alt="Ducati" class="brand-logo lg" />
+            <p>Born in Bologna, Italy, Ducati has been crafting motorcycles that combine Italian style with racing performance since 1926.</p>
+            <ul class="contact">
+              <li>Via Cavalieri Ducati, Bologna, Italy</li>
+              <li>+1 (800) DUCATI-1</li>
+              <li>info@ducati.com</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h4>Motorcycles</h4>
+            <ul>
+              <li><a href="#">Superbike</a></li>
+              <li><a href="#">Hypermotard</a></li>
+              <li><a href="#">Monster</a></li>
+              <li><a href="#">Multistrada</a></li>
+              <li><a href="#">Scrambler</a></li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#dealers">Find a Dealer</a></li>
+              <li><a href="#test-ride">Test Ride</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Insurance</a></li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h4>Racing</h4>
+            <ul>
+              <li><a href="#motogp">MotoGP</a></li>
+              <li><a href="#motogp">WorldSBK</a></li>
+              <li><a href="#">Ducati Corse</a></li>
+              <li><a href="#">Riders</a></li>
+              <li><a href="#">Results</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="legal">© 2025 Ducati Motor Holding S.p.A.</div>
+          <div class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
