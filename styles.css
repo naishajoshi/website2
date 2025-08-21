@@ -28,7 +28,7 @@ img { max-width: 100%; display: block; }
  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
 .container {
-  width: min(1200px, 92%);
+  width: min(1280px, 92%);
   margin: 0 auto;
 }
 
@@ -45,7 +45,10 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 64px;
+}
+@media (min-width: 768px) {
+  .nav-inner { height: 72px; }
 }
 .brand-logo { height: 28px; width: auto; }
 .brand-logo.lg { height: 36px; }
@@ -111,7 +114,9 @@ img { max-width: 100%; display: block; }
 /* Quick Actions (removed) */
 
 /* Sections */
-.section { padding: 72px 0; background: var(--surface); }
+.section { padding: 56px 0; background: var(--surface); }
+@media (min-width: 768px) { .section { padding: 72px 0; } }
+@media (min-width: 1280px) { .section { padding: 88px 0; } }
 .section[id] { scroll-margin-top: 84px; }
 .section-alt { background: var(--surface-2); }
 .section-accent { background: var(--ducati-red); }
@@ -129,7 +134,8 @@ img { max-width: 100%; display: block; }
 .grid-3 { grid-template-columns: repeat(1, 1fr); }
 @media (min-width: 640px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 768px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .grid-4 { grid-template-columns: repeat(3, 1fr); } .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1280px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } }
 .span-2 { grid-column: span 1; }
 @media (min-width: 768px) { .span-2 { grid-column: span 2; } }
 
@@ -193,3 +199,8 @@ img { max-width: 100%; display: block; }
 .center { text-align: center; }
 .mt-md { margin-top: 16px; }
 .mt-lg { margin-top: 24px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
