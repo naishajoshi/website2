@@ -73,19 +73,19 @@ img { max-width: 100%; display: block; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border: 1px solid transparent; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .2s ease, color .2s ease, border-color .2s ease; }
 .btn-sm { padding: 8px 12px; font-size: 12px; }
 .btn-primary { background: linear-gradient(180deg, #ff2a1b 0%, var(--ducati-red) 100%); color: #fff; box-shadow: 0 6px 14px rgba(225,6,0,.3); }
-.btn-primary:hover { filter: brightness(0.98); box-shadow: 0 10px 18px rgba(225,6,0,.38); transform: translateY(-1px); }
+.btn-primary:hover { filter: brightness(0.98); box-shadow: 0 10px 18px rgba(225,6,0,.38); transform: translateY(-2px); }
 .btn-primary:active { transform: translateY(0); filter: brightness(0.95); }
 .btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; box-shadow: 0 0 0 3px rgba(225,6,0,.35); }
 .btn-outline { color: var(--ducati-red); border-color: var(--ducati-red); background: transparent; }
-.btn-outline:hover { background: var(--ducati-red); color: #fff; }
+.btn-outline:hover { background: var(--ducati-red); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 16px rgba(225,6,0,.25); }
 .btn-dark { background: #111827; color: #fff; }
-.btn-dark:hover { background: var(--ducati-red); }
+.btn-dark:hover { background: var(--ducati-red); transform: translateY(-2px); box-shadow: 0 8px 16px rgba(225,6,0,.25); }
 .btn-light { background: #fff; color: var(--ducati-red); }
-.btn-light:hover { background: #f3f4f6; }
+.btn-light:hover { background: #f3f4f6; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,.1); }
 .btn-outline-light { color: #fff; border-color: #fff; background: transparent; }
-.btn-outline-light:hover { background: #fff; color: var(--ducati-red); }
+.btn-outline-light:hover { background: #fff; color: var(--ducati-red); transform: translateY(-2px); box-shadow: 0 8px 16px rgba(255,255,255,.25); }
 .btn-link { color: var(--ducati-red); font-weight: 700; }
-.btn-link:hover { color: #c10000; }
+.btn-link:hover { color: #c10000; text-decoration: underline; text-underline-offset: 2px; }
 .block { width: 100%; }
 
 /* Hero button overrides for better contrast */
