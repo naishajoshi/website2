@@ -108,16 +108,7 @@ img { max-width: 100%; display: block; }
 .wheel { width: 3px; height: 8px; border-radius: 2px; background: #fff; animation: wheel 1.6s infinite; }
 @keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(18px); opacity: 0; } }
 
-/* Quick Actions */
-.quick-actions { background: #fff; padding: 24px 0; border-bottom: 1px solid var(--border); }
-.qa-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
-@media (min-width: 768px) { .qa-grid { grid-template-columns: repeat(3, 1fr); } }
-.qa-card { display: flex; gap: 12px; align-items: center; padding: 14px 16px; border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(0,0,0,.05); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease; }
-.qa-card:hover { transform: translateY(-3px); border-color: #e2e8f0; box-shadow: 0 12px 24px rgba(0,0,0,.08); background: #fff; }
-.qa-icon { width: 48px; height: 48px; border-radius: 999px; display: grid; place-items: center; background: #f3f4f6; color: var(--ducati-red); transition: background .2s ease, color .2s ease; }
-.qa-card:hover .qa-icon { background: var(--ducati-red); color: #fff; }
-.qa-body h3 { margin: 0; font-size: 16px; }
-.qa-body p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+/* Quick Actions (removed) */
 
 /* Sections */
 .section { padding: 72px 0; background: var(--surface); }
